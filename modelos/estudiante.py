@@ -1,7 +1,7 @@
 # Clase derivada Estudiante
 # Aplica herencia y polimorfismo
 
-from .persona import Persona   # 👈 IMPORT CORRECTO
+from .persona import Persona   
 
 class Estudiante(Persona):
     def __init__(self, nombre, edad, carrera):
@@ -12,3 +12,4 @@ class Estudiante(Persona):
     # Método sobrescrito (polimorfismo)
     def presentarse(self):
         return f"Hola, soy {self.get_nombre()}, estudio {self.carrera} y tengo {self.get_edad()} años."
+
